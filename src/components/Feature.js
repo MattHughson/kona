@@ -3,6 +3,7 @@ import { Link } from "gatsby";
 import { storyblokEditable } from "gatsby-source-storyblok";
 
 const Feature = ({ blok }) => {
+  console.log("feature",blok)
   return (
     <div className="column feature" {...storyblokEditable(blok)}>
       <div className="p-6">

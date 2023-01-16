@@ -2,9 +2,8 @@ import * as React from "react"
 import PropTypes from "prop-types"
 import { storyblokInit, apiPlugin } from "gatsby-source-storyblok"
 import Teaser from './teaser'
-import Grid from "./grid"
-import Feature from "./feature"
-import Header from "./header"
+import Grid from "./Grid"
+import Feature from "./Feature"
 import Footer from "./footer"
 import Config from "./config"
 import MenuLink from "./menuLink"
@@ -26,7 +25,6 @@ storyblokInit({
 const Layout = ({ children }) => {
   return (
     <div className="text-center">
-      <Header />
       {children}
       <Footer />
     </div>

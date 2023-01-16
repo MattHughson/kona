@@ -8,11 +8,13 @@ import Footer from "./footer"
 import Config from "./config"
 import MenuLink from "./menuLink"
 import Hero from "./hero"
+import Header from "./Header"
 
 storyblokInit({
   accessToken: process.env.GATSBY_PREVIEW_STORYBLOK,
   use: [apiPlugin],
   components: {
+    header: Header,
     teaser: Teaser,
     grid: Grid,
     feature: Feature,
@@ -20,13 +22,13 @@ storyblokInit({
     hero: Hero,
     "menu_link": MenuLink
   }
-});
+},[]);
 
 const Layout = ({ children }) => {
   return (
     <div className="text-center">
       {children}
-      <Footer />
+      {/* <Footer /> */}
     </div>
   )
 }

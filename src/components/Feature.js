@@ -3,15 +3,22 @@ import { Link } from "gatsby";
 import { storyblokEditable } from "gatsby-source-storyblok";
 
 const Feature = ({ blok }) => {
-  console.log("feature",blok)
+
+
+
   return (
-    <div className="column feature" {...storyblokEditable(blok)}>
-      <div className="p-6">
-        <img className="object-cover object-center w-full mb-8 lg:h-48 md:h-36 rounded-xl" src={blok.image.filename} alt="feature" />
-        <h1 className="mx-auto mb-8 text-2xl font-semibold leading-none tracking-tighter text-neutral-600 lg:text-3xl">{blok.name}</h1>
-        <div className="mt-4">
-          <Link to="#" className="inline-flex items-center mt-4 font-semibold text-blue-600 lg:mb-0 hover:text-neutral-600" title="read more"> Read More » </Link>
-        </div>
+    <div className="hero min-h-screen bg-base-200" {...storyblokEditable(blok)}>
+      <div className="hero-content flex-col lg:flex-row">
+        {
+             blok?.image[0]?.filename !== "" ? <img 
+             className="max-w-sm rounded-lg shadow-2xl" src={blok?.image[0]?.filename} alt="feature" /> : <></>
+        }
+   <div>
+
+        <h1 className="text-5xl font-bold">{blok.name}</h1>
+        <p className="py-6">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+      <button className="btn btn-primary">Get Started</button>
+   </div>
       </div>
     </div>
   );

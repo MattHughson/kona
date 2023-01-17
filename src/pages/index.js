@@ -14,7 +14,7 @@ export default function Home({ data }) {
   return (
     <Layout>
       <div {...storyblokEditable(story.content)}>
-      <h1>{story.name}</h1>
+    
         {components}
       </div>
     </Layout>

@@ -17,18 +17,19 @@ const Feature = ({ blok }) => {
    <div>
 
         <h1 className="text-5xl ç">{blok.name}</h1>
-        <p className="py-6">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
-        <label htmlFor="my-modal-6" className="btn btn-primary">{blok.calltoaction}</label>
+        <p className="py-6">{blok.info}</p>
+        <label htmlFor="my-modal-4" className="btn btn-primary">{blok.calltoaction}</label>
+        <input type="checkbox" id="my-modal-4" className="modal-toggle" />
+<label htmlFor="my-modal-4" className="modal cursor-pointer ">
+<label htmlFor="my-modal-4" className="btn btn-sm btn-circle absolute right-2 top-2">✕</label>
+  <div className="modal-box w-11/12 max-w-5xl">
 
-<input type="checkbox" id="my-modal-6" className="modal-toggle" />
-<div className="modal modal-bottom sm:modal-middle">
-  <div className="modal-box">
 
-<iframe src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ1WmZVD4CB9u63Dhp51gcJFXdumzDDZeL4xsii-tlz6aFOPALry3Itp9V8CuAdvN29bYJ46Izfw?gv=true" style="border: 0" width="100%" height="600" frameborder="0"></iframe>
-
-    </div>
+  <iframe title="bookme" src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ1WmZVD4CB9u63Dhp51gcJFXdumzDDZeL4xsii-tlz6aFOPALry3Itp9V8CuAdvN29bYJ46Izfw?gv=true" width='100%' height="800"></iframe>
+  
   </div>
-</div>
+</label>
+
    </div>
       </div>
     </div>

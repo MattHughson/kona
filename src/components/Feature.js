@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "gatsby";
 import { storyblokEditable } from "gatsby-source-storyblok";
 
 const Feature = ({ blok }) => {
@@ -31,9 +30,9 @@ const Feature = ({ blok }) => {
 </label>
 
    </div>
+      
       </div>
     </div>
-
     
   );
 };

@@ -9,6 +9,7 @@ import Config from "./config"
 import MenuLink from "./menuLink"
 import Hero from "./hero"
 import Header from "./Header"
+import Article from "./Article"
 
 storyblokInit({
   accessToken: process.env.GATSBY_PREVIEW_STORYBLOK,
@@ -20,7 +21,8 @@ storyblokInit({
     feature: Feature,
     config: Config,
     hero: Hero,
-    "menu_link": MenuLink
+    "menu_link": MenuLink,
+    article: Article,
   }
 },[]);
 

@@ -9,7 +9,15 @@ module.exports = {
   },
   plugins: [require("daisyui")],
   daisyui: {
-    themes: false,
+    themes: [
+      {
+        light: {
+          ...require("daisyui/src/colors/themes")["[data-theme=light]"],
+          primary: "#8B653E",
+          
+        },
+      },
+    ],
   },
 
 }
